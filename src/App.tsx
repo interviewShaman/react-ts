@@ -8,6 +8,8 @@ import SimpleDebounce from "./component/debounce/simpleDebounce/SimpleDebounce";
 import SimpleThrottle from "./component/throttle/simpleThrottle/simpleThrottle";
 import LodashDebounce from "./component/debounce/lodashDebounce/LodashDebounce";
 import LodashThrottle from "./component/throttle/lodashThrottle/lodashThrottle";
+import SimpleCustomHook from "./component/customHook/simpleCustomHook/simpleCustomHook";
+import HigherOrderComponent from "./component/higherOrderComponent/simpleHigherOrderComponent/HigherOrderComponent";
 
 export default function App() {
   return (
@@ -20,7 +22,9 @@ export default function App() {
         <Link to="/simpleDebounce"> Simple Debounce </Link> |
         <Link to="/simpleThrottle"> Simple Throttle </Link> |
         <Link to="/lodashDebounce"> Lodash Debounce </Link> |
-        <Link to="/lodashThrottle"> Lodash Throttle </Link>
+        <Link to="/lodashThrottle"> Lodash Throttle </Link> |
+        <Link to="/simpleCustomHook"> Simple Custom Hook </Link> |
+        <Link to="/higherOrderComponent"> Higher Order Component </Link>
       </nav>
 
       <Routes>
@@ -32,6 +36,11 @@ export default function App() {
         <Route path="/simpleThrottle" element={<SimpleThrottle />} />
         <Route path="/lodashDebounce" element={<LodashDebounce />} />
         <Route path="/lodashThrottle" element={<LodashThrottle />} />
+        <Route path="/simpleCustomHook" element={<SimpleCustomHook />} />
+        <Route
+          path="/higherOrderComponent"
+          element={<HigherOrderComponent />}
+        />
       </Routes>
     </Router>
   );
