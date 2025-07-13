@@ -10,6 +10,8 @@ import LodashDebounce from "./component/debounce/lodashDebounce/LodashDebounce";
 import LodashThrottle from "./component/throttle/lodashThrottle/lodashThrottle";
 import SimpleCustomHook from "./component/customHook/simpleCustomHook/simpleCustomHook";
 import HigherOrderComponent from "./component/higherOrderComponent/simpleHigherOrderComponent/HigherOrderComponent";
+import CapturingExample from "./component/eventBubblingAndCapturing/capturingExample/CapturingExample";
+import BubblingExample from "./component/eventBubblingAndCapturing/bubblingExample/BubblingExample";
 
 export default function App() {
   return (
@@ -24,7 +26,9 @@ export default function App() {
         <Link to="/lodashDebounce"> Lodash Debounce </Link> |
         <Link to="/lodashThrottle"> Lodash Throttle </Link> |
         <Link to="/simpleCustomHook"> Simple Custom Hook </Link> |
-        <Link to="/higherOrderComponent"> Higher Order Component </Link>
+        <Link to="/higherOrderComponent"> Higher Order Component </Link> |
+        <Link to="/bubblingExample"> Event Bubbling Example </Link> |
+        <Link to="/capturingExample"> Event Capturing Example </Link>
       </nav>
 
       <Routes>
@@ -41,6 +45,8 @@ export default function App() {
           path="/higherOrderComponent"
           element={<HigherOrderComponent />}
         />
+        <Route path="/capturingExample" element={<CapturingExample />} />
+        <Route path="/bubblingExample" element={<BubblingExample />} />
       </Routes>
     </Router>
   );
