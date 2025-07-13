@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import SimpleCartTable from "./component/cart/CartExampleWithTable/SimpleCartTable";
-import SimpleCart from "./component/cart/CartExampleWithoutTable/SimpleCart";
-import ProductDropdown from "./component/dropdown/simpleDropDown/ProductDropdown";
-import CategoryVariantSelector from "./component/dropdown/categoryVariantSelector/CategoryVariantSelector";
-import SimpleDebounce from "./component/debounce/simpleDebounce/SimpleDebounce";
-import SimpleThrottle from "./component/throttle/simpleThrottle/simpleThrottle";
-import LodashDebounce from "./component/debounce/lodashDebounce/LodashDebounce";
-import LodashThrottle from "./component/throttle/lodashThrottle/lodashThrottle";
-import SimpleCustomHook from "./component/customHook/simpleCustomHook/simpleCustomHook";
-import HigherOrderComponent from "./component/higherOrderComponent/simpleHigherOrderComponent/HigherOrderComponent";
-import CapturingExample from "./component/eventBubblingAndCapturing/capturingExample/CapturingExample";
-import BubblingExample from "./component/eventBubblingAndCapturing/bubblingExample/BubblingExample";
+import SimpleCartTable from "./component/01-cart/CartExampleWithTable/SimpleCartTable";
+import SimpleCart from "./component/01-cart/CartExampleWithoutTable/SimpleCart";
+import ProductDropdown from "./component/02-dropdown/simpleDropDown/ProductDropdown";
+import CategoryVariantSelector from "./component/02-dropdown/categoryVariantSelector/CategoryVariantSelector";
+import SimpleDebounce from "./component/06-debounce/simpleDebounce/SimpleDebounce";
+import SimpleThrottle from "./component/05-throttle/simpleThrottle/simpleThrottle";
+import LodashDebounce from "./component/06-debounce/lodashDebounce/LodashDebounce";
+import LodashThrottle from "./component/05-throttle/lodashThrottle/lodashThrottle";
+import SimpleCustomHook from "./component/03-customHook/simpleCustomHook/simpleCustomHook";
+import HigherOrderComponent from "./component/04-higherOrderComponent/simpleHigherOrderComponent/HigherOrderComponent";
+import CapturingExample from "./component/07-eventBubblingAndCapturing/capturingExample/CapturingExample";
+import BubblingExample from "./component/07-eventBubblingAndCapturing/bubblingExample/BubblingExample";
 
 export default function App() {
   return (
